@@ -10,11 +10,13 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class Webtablee {
 
 	public static void main(String[] args) throws InterruptedException {
 	
-	System.setProperty("webdriver.chrome.driver", "C:\\Users\\User\\Desktop\\alltry\\src\\main\\resources\\chromedriver.exe");
+	WebDriverManager.chromedriver().setup();
 	
 	WebDriver driver = new ChromeDriver();
 	
